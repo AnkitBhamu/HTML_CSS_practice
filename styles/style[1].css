@@ -1,0 +1,242 @@
+/* all transiiton must be putted into the base class  if want transition from base class to other class. */
+/* padding is inside a element and margin is outside of the element */
+/* para tags by default comes with margin at top and bottom */
+/* styles that are duplicated are applied from the top to  bottom so overwrite by same attributes */
+/* styles with a particular class name has more priority then general classes styles */
+
+/* images have object fit property for covering the entire image in the specified width and height element and also it has */
+/*object posiition specifies the posiition to be centerd in case of object fit model.*/
+/* flex creates equal size boxes in the flex direction */
+/* inline block elements takes only the space that is needed to them */
+/* block elements takes entire line */
+/* inline elements only appears within line of text*/
+
+/* flex grow property is only applied when all the other spaces are calculated and remaining space is there*/
+/* images are akways floating by default to maintain their size */
+/* vertical align property to start every element from top */
+/* grid makes it easy to create grid like structure without using inline block element and it solves the alignment problem */
+/* html  creates one space out of the other spaces so every space between elements in the code will result to space on website screen */
+/* flex and grid are same but flex is more flexible but grid is rigid it pre assigns the box sizing */
+/* flex grow in taking remaining space */
+/* in flex ordering of elements also takes the styles along with them than grid*/
+
+/* flex box or grid only works to the nearset layer not inside that layer */
+/* inbuilt css can be done on buttons , inputs by :: */
+
+/* DESIGN PRINCIPAL
+BREAK ANY DESIGN INTO HORIZONTAL AND VERTICAL COMPONENTS AND THEN DECIDE HOW TO USE THEM TO MAKE  THE WEBSITE
+*/
+
+/* order of css ( inline > old css  > latest css) */
+
+/* header section */
+.header
+{
+    display: flex;
+}
+
+.menu
+{
+    width: 30px;
+    padding-left: 5px;
+}
+
+.yt-logo
+{
+    width: 100px;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+.left
+{
+    display: flex;
+    height: 40px;
+}
+
+.middle
+{
+    width: 500px;
+    display: flex;
+    height: 40px;
+    flex-grow: 1;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+
+.search
+{
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid #cccccc;
+
+}
+
+.search-button
+{
+    width: 30px;
+}
+.search_btn_container
+{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background-color: #f7f7f7;
+    width: 70px;
+    justify-content: center;
+}
+
+
+.voice_container
+{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.voice_search
+{
+    height: 24px;
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+    background-color: #f8f8f8;
+}
+
+.right
+{
+    display: flex;
+    width: 180px;
+    justify-content: flex-end;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.my_channel
+{
+    width: 30px;  
+    margin-top: 2px;
+}
+
+.notifications
+{
+    width: 30px;
+    margin-right: 20px;
+}
+.apps
+{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.upload
+{
+    width: 30px;
+    margin-right: 20px;
+}
+
+
+
+.main_grid
+{
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+
+/* left side bar */
+.left_options
+{
+    display: flex;
+    flex-direction: column;
+    width: 66px;
+    /* padding-left: 5px; */
+    margin-top: 30px;
+    align-items: center;
+}
+
+.options_class
+{
+    width: 30px;
+
+}
+
+.options_text
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.content_grid
+{
+    background-color: #f7f7f7;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
+    padding: 20px;
+}
+
+/* .videos
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 15px;
+} */
+
+/* .video
+{
+    max-width: 300px;
+} */
+
+.video_thumbnail
+{
+    width: 100%;
+}
+
+.video_desc
+{
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    margin-top: 10px;
+    margin-left: 10px;
+    row-gap: 5px;
+}
+
+.channel_picture
+{
+    width: 30px;
+    border-radius: 30px;
+}
+
+.channel_name
+{
+    grid-column: 2/span 1;
+    color: #606060;
+    font-size: 15px;
+}
+
+.views_dates
+{
+    display: flex;
+    align-items: center;
+    grid-column: 2/span 1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #606060;
+    font-size: 12px;
+
+}
+
+
